@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <com.example.myview.view.CustomView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <com.example.myview.view.FlowerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.example.myview.view.Arcblock
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#60cd74"
+        android:textSize="20sp" />
+
+    <com.example.myview.view.MyTapeView
+        android:id="@+id/tapeWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:calibrationWidth="1dp"
+        app:maxValue="200"
+        app:minValue="40"
+        app:per="0.1"
+        app:value="80" />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:textColor="#333333"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#60cd74"
+        android:textSize="20sp" />
+
+    <com.example.myview.view.TapeView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tapeHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:calibrationWidth="1dp"
+        app:maxValue="230"
+        app:minValue="100"
+        app:value="164" />
+    <com.example.myview.view.UserMainView
+        android:id="@+id/usermainview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.example.myview.view.DrawTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.example.myview.view.CustomView3
+        android:id="@+id/custom_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round_position="left-bottom|right-bottom|right-top|left-top" />
+    <com.example.myview.view.TestPath2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+ <com.example.myview.view.Mytextview
+     android:layout_width="wrap_content"
+     android:layout_height="100dp"
+     app:myImageSrc="@drawable/ic_launcher"
+     app:myText="uuuuuuu"
+     app:myTextSize="15dp"
+     app:myTextColor="#000000"
+     app:myImageWidth="20dp"
+     app:myImageHeight="20dp"
+     app:myTextAndImgPadding="10dp"
+     android:visibility="gone"/>
+    <com.example.myview.view.Dashboard
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.example.myview.view.KingoitFlowLayout
+        android:id="@+id/kingoit_flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        app:flowLayoutDeleteBtnColor="@color/colorPrimary"
+        app:flowLayoutLineWidth="1dp"
+        app:flowLayoutRadius="50dp"
+        app:flowLayoutTextSize="16sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

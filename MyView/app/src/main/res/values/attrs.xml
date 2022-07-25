@@ -1,0 +1,78 @@
+<!--KingoitFlowLayout ，流式布局属性设置-->
+<resources>
+<declare-styleable name="KingoitFlowLayout">
+    <attr name="flowLayoutRadius" format="dimension"/>
+    <attr name="flowLayoutTextColor" format="color"/>
+    <attr name="flowLayoutTextColorSelector" format="color"/>
+    <attr name="flowLayoutTextSize" format="dimension"/>
+    <attr name="flowLayoutLineColor" format="color"/>
+    <attr name="flowLayoutLineWidth" format="dimension"/>
+    <attr name="flowLayoutBackgroundColor" format="color"/>
+    <attr name="flowLayoutBackgroundColorSelector" format="color"/>
+    <attr name="flowLayoutDeleteBtnColor" format="color"/>
+</declare-styleable>
+    <attr name="firstColor" format="color" />
+    <attr name="secondColor" format="color" />
+    <attr name="circleWidth" format="dimension" />
+    <attr name="speed" format="integer" />
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="firstColor" />
+        <attr name="secondColor" />
+        <attr name="circleWidth" />
+        <attr name="speed" />
+    </declare-styleable>
+    <attr name="myText" format="string"></attr>
+    <attr name="myTextSize" format="dimension"></attr>
+    <attr name="myTextColor" format="color"></attr>
+    <attr name="myTextAndImgPadding" format="dimension"></attr>
+    <attr name="myImageSrc" format="reference"></attr>
+    <attr name="myImageWidth" format="dimension"></attr>
+    <attr name="myImageHeight" format="dimension"></attr>
+    <attr name="myImageScaleType">
+        <enum name="FillXY" value="1"></enum>
+        <enum name="center" value="0"></enum>
+    </attr>
+    <!-- 声明属性 -->
+    <declare-styleable name="ZqhDrawableLeft">
+        <attr name="myText"></attr>
+        <attr name="myTextSize"></attr>
+        <attr name="myTextColor"></attr>
+        <attr name="myTextAndImgPadding"></attr>
+        <attr name="myImageSrc"></attr>
+        <attr name="myImageScaleType"></attr>
+        <attr name="myImageWidth"></attr>
+        <attr name="myImageHeight"></attr>
+    </declare-styleable>
+    <declare-styleable name="CustomView">
+        <attr name="round_position">
+            <flag name="left-top" value="0x1"></flag>
+            <flag name="right-top" value="0x4"></flag>
+            <flag name="left-bottom" value="0x2"></flag>
+            <flag name="right-bottom" value="0x8"></flag>
+        </attr>
+        <attr name="round_radius" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="TapeView">
+        <attr name="bgColor" format="color|reference"></attr>
+
+        <attr name="calibrationColor" format="color|reference"></attr>
+        <attr name="calibrationWidth" format="dimension|reference"></attr>
+        <attr name="calibrationShort" format="dimension|reference"></attr>
+        <attr name="calibrationLong" format="dimension|reference"></attr>
+
+        <attr name="triangleColor" format="color|reference"></attr>
+        <attr name="triangleHeight" format="dimension|reference"></attr>
+
+        <attr name="textColor" format="color|reference"></attr>
+        <attr name="textSize" format="dimension|reference"></attr>
+
+        <!--每一隔的所代表的数值-->
+        <attr name="per" format="float|reference"></attr>
+        <attr name="perCount" format="integer"></attr>
+        <attr name="gapWidth" format="dimension|reference"></attr>
+        <attr name="minValue" format="float"></attr>
+        <attr name="maxValue" format="float"></attr>
+        <attr name="value" format="float"></attr>
+    </declare-styleable>
+</resources>
